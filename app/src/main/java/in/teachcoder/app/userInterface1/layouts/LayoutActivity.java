@@ -11,22 +11,25 @@ import android.widget.Button;
 import in.teachcoder.app.apiguideapp0.R;
 
 public class LayoutActivity extends AppCompatActivity {
-    Button mLinearLayoutBtn = (Button)findViewById(R.id.lllinearLayoutbtn);
-    Button mRelativeLayoutBtn = (Button)findViewById(R.id.relativeLayoutbtn);
-
+    Button mLinearLayoutBtn;
+    Button mRelativeLayoutBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_layout);
+         mLinearLayoutBtn = (Button)findViewById(R.id.lllinearLayoutbtn);
+         mRelativeLayoutBtn = (Button)findViewById(R.id.relativeLayoutbtn);
     }
 
     public void BtnPressed(View v){
+        long num = mLinearLayoutBtn.getId();
+        long num1 = mRelativeLayoutBtn.getId();
 
-        if(v.getId() == mLinearLayoutBtn.getId()){
+        if(v.getId() == num){
             Intent linaerLayoutIntent = new Intent(this, LinearLayoutActivity.class);
             startActivity(linaerLayoutIntent);
         }
-        if(v.getId() == mRelativeLayoutBtn.getId()){
+        if(v.getId() == num1){
             Intent relativeLayoutIntent = new Intent(this, RelativeLayoutActivity.class);
             startActivity(relativeLayoutIntent);
         }
