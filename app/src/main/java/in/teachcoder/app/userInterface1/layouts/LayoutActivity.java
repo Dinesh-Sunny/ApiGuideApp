@@ -1,4 +1,4 @@
-package in.teachcoder.app.apiguideapp0;
+package in.teachcoder.app.userInterface1.layouts;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,30 +6,38 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
-import in.teachcoder.app.userInterface1.layouts.LayoutActivity;
-import in.teachcoder.app.userInterface1.layouts.LinearLayoutActivity;
+import in.teachcoder.app.apiguideapp0.R;
 
-public class MainActivity extends AppCompatActivity {
+public class LayoutActivity extends AppCompatActivity {
+    Button mLinearLayoutBtn = (Button)findViewById(R.id.lllinearLayoutbtn);
+    Button mRelativeLayoutBtn = (Button)findViewById(R.id.relativeLayoutbtn);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-
+        setContentView(R.layout.activity_layout);
     }
 
-    public void userInterfaceBtnPressed(View v){
-        Intent userinterfaceIntent = new Intent(this, LayoutActivity.class);
+    public void BtnPressed(View v){
 
-        startActivity(userinterfaceIntent);
+        if(v.getId() == mLinearLayoutBtn.getId()){
+            Intent linaerLayoutIntent = new Intent(this, LinearLayoutActivity.class);
+            startActivity(linaerLayoutIntent);
+        }
+        if(v.getId() == mRelativeLayoutBtn.getId()){
+            Intent relativeLayoutIntent = new Intent(this, RelativeLayoutActivity.class);
+            startActivity(relativeLayoutIntent);
+        }
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_layout, menu);
         return true;
     }
 

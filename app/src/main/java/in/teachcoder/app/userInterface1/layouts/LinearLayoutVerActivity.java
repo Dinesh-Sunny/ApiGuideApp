@@ -1,35 +1,24 @@
-package in.teachcoder.app.apiguideapp0;
+package in.teachcoder.app.userInterface1.layouts;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
-import in.teachcoder.app.userInterface1.layouts.LayoutActivity;
-import in.teachcoder.app.userInterface1.layouts.LinearLayoutActivity;
+import in.teachcoder.app.apiguideapp0.R;
 
-public class MainActivity extends AppCompatActivity {
+public class LinearLayoutVerActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-
-    }
-
-    public void userInterfaceBtnPressed(View v){
-        Intent userinterfaceIntent = new Intent(this, LayoutActivity.class);
-
-        startActivity(userinterfaceIntent);
+        setContentView(R.layout.activity_linear_layout_ver);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_linear_layout_ver, menu);
         return true;
     }
 

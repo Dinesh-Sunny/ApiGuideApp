@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.teachcoder.app.userInterface1.layouts.LinearLayoutActivity"
+    android:weightSum="1">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Linear Layout"
+        android:id="@+id/lllinearLayoutbtn"
+        android:layout_gravity="center_horizontal"
+        android:onClick="BtnPressed"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relative Layout"
+        android:id="@+id/relativeLayoutbtn"
+        android:layout_gravity="center_horizontal"
+        android:onClick="BtnPressed"/>
+
+
+</LinearLayout>

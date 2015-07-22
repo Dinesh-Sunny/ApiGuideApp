@@ -8,13 +8,33 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="in.teachcoder.app.apiguideapp0.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="in.teachcoder.app.userInterface1.layouts.LinearLayoutActivity"
+            android:label="@string/title_activity_linear_layout" >
+        </activity>
+        <activity
+            android:name="in.teachcoder.app.userInterface1.layouts.LinearLayoutHorActivity"
+            android:label="@string/title_activity_linear_layout_hor" >
+        </activity>
+        <activity
+            android:name="in.teachcoder.app.userInterface1.layouts.LinearLayoutVerActivity"
+            android:label="@string/title_activity_linear_layout_ver" >
+        </activity>
+        <activity
+            android:name="in.teachcoder.app.userInterface1.layouts.LayoutActivity"
+            android:label="@string/title_activity_layout" >
+        </activity>
+        <activity
+            android:name="in.teachcoder.app.userInterface1.layouts.RelativeLayoutActivity"
+            android:label="@string/title_activity_relative_layout" >
         </activity>
     </application>
 
